@@ -4,6 +4,8 @@
 #include <string>
 #include <map>
 
+using namespace std;
+
 vector<int> OrderOfSort(const vector<pair<int, int>>& a) {
     int maxVal = 0;
     for (const auto& [l, r] : a) {
@@ -42,6 +44,7 @@ class SuffixArray {
 private:
     vector<vector<int>> c;
     vector<int> p;
+
 public:
     SuffixArray();
 
